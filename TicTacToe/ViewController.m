@@ -74,7 +74,6 @@
     self.button21String = @"21";
     self.button22String = @"22";
     
-    
 }
 
 - (IBAction)onButtonPressed:(UIButton *)sender {
@@ -186,11 +185,22 @@
         
         self.winnerLabel.text = theWinner;
         
+        UIAlertController *winnerAlert = [UIAlertController alertControllerWithTitle:@"Game Winner" message:theWinner preferredStyle:UIAlertControllerStyleActionSheet];
+        
+        UIAlertAction *cancelAlert = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:nil];
+        
+        UIAlertAction *resetGame = [UIAlertAction actionWithTitle:@"Reset" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
+        {
+            [ViewController view];
+        }];
+        
+        [winnerAlert addAction:cancelAlert];
+        [winnerAlert addAction:resetGame];
+        
+        [self presentViewController:winnerAlert animated:true completion:nil];
+        
     }
 
-
 }
-
-
 
 @end
