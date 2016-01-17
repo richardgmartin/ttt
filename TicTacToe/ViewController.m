@@ -56,23 +56,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.move = YES;
+    [self initiateGame];
     
-    self.winnerLabel.text = @"Winner: TBA";
+    self.title = @"Tic Tac Toe";
     
-    // assignment of button currentTitle to corresponding
-    
-    self.button00String = @"00";
-    self.button01String = @"01";
-    self.button02String = @"02";
-    
-    self.button10String = @"10";
-    self.button11String = @"11";
-    self.button12String = @"12";
-    
-    self.button20String = @"20";
-    self.button21String = @"21";
-    self.button22String = @"22";
     
 }
 
@@ -160,11 +147,6 @@
         }
 
     }
-
-    NSLog(@"sender.currentTitle is: %@", sender.currentTitle);
-    NSLog(@"sender.titleLabel.text is: %@", sender.titleLabel.text);
-    // NSLog(@"self.button00String is: %@", self.button00String);
-    
     
     // logic to determine winner
     
@@ -183,6 +165,8 @@
     {
         NSString *theWinner = [NSString stringWithFormat:@"Player %@ is the Winner", sender.currentTitle];
         
+        [self.winnerLabel sizeToFit];
+
         self.winnerLabel.text = theWinner;
         
         UIAlertController *winnerAlert = [UIAlertController alertControllerWithTitle:@"Game Winner" message:theWinner preferredStyle:UIAlertControllerStyleActionSheet];
@@ -191,7 +175,7 @@
         
         UIAlertAction *resetGame = [UIAlertAction actionWithTitle:@"Reset" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
         {
-            [ViewController view];
+            [self initiateGame];
         }];
         
         [winnerAlert addAction:cancelAlert];
@@ -200,7 +184,66 @@
         [self presentViewController:winnerAlert animated:true completion:nil];
         
     }
-
+    
 }
+    
+    
+-(void)initiateGame {
+    
+    self.move = YES;
+    
+//    [self.winnerLabel sizeToFit];
+//    
+//    self.winnerLabel.text = @"Winner: TBA";
+    
+    // assignment of button currentTitle to corresponding
+    
+    self.button00String = @"00";
+    [self.button00 setTitle:@"00" forState:UIControlStateNormal];
+    [self.button00 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    self.button01String = @"01";
+    [self.button01 setTitle:@"01" forState:UIControlStateNormal];
+    [self.button01 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    self.button02String = @"02";
+    [self.button02 setTitle:@"02" forState:UIControlStateNormal];
+    [self.button02 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    self.button10String = @"10";
+    [self.button10 setTitle:@"10" forState:UIControlStateNormal];
+    [self.button10 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    self.button11String = @"11";
+    [self.button11 setTitle:@"11" forState:UIControlStateNormal];
+    [self.button11 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    self.button12String = @"12";
+    [self.button12 setTitle:@"12" forState:UIControlStateNormal];
+    [self.button12 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    
+    self.button20String = @"20";
+    [self.button20 setTitle:@"20" forState:UIControlStateNormal];
+    [self.button20 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    self.button21String = @"21";
+    [self.button21 setTitle:@"21" forState:UIControlStateNormal];
+    [self.button21 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    self.button22String = @"22";
+    [self.button22 setTitle:@"22" forState:UIControlStateNormal];
+    [self.button22 setTitleColor:[ UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    }
+
 
 @end

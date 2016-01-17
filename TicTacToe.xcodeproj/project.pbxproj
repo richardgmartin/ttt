@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3F966821C4C187A00BD9CA6 /* WebHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F966811C4C187A00BD9CA6 /* WebHelpViewController.m */; };
 		DF30D5371C4837670014BD38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF30D5361C4837670014BD38 /* main.m */; };
 		DF30D53A1C4837670014BD38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF30D5391C4837670014BD38 /* AppDelegate.m */; };
 		DF30D53D1C4837670014BD38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF30D53C1C4837670014BD38 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3F966801C4C187A00BD9CA6 /* WebHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebHelpViewController.h; sourceTree = "<group>"; };
+		A3F966811C4C187A00BD9CA6 /* WebHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebHelpViewController.m; sourceTree = "<group>"; };
 		DF30D5321C4837670014BD38 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF30D5361C4837670014BD38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF30D5381C4837670014BD38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				DF30D5391C4837670014BD38 /* AppDelegate.m */,
 				DF30D53B1C4837670014BD38 /* ViewController.h */,
 				DF30D53C1C4837670014BD38 /* ViewController.m */,
+				A3F966801C4C187A00BD9CA6 /* WebHelpViewController.h */,
+				A3F966811C4C187A00BD9CA6 /* WebHelpViewController.m */,
 				DF30D53E1C4837670014BD38 /* Main.storyboard */,
 				DF30D5411C4837670014BD38 /* Assets.xcassets */,
 				DF30D5431C4837670014BD38 /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F966821C4C187A00BD9CA6 /* WebHelpViewController.m in Sources */,
 				DF30D53D1C4837670014BD38 /* ViewController.m in Sources */,
 				DF30D53A1C4837670014BD38 /* AppDelegate.m in Sources */,
 				DF30D5371C4837670014BD38 /* main.m in Sources */,
@@ -298,6 +304,7 @@
 				DF30D54B1C4837670014BD38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CfF-b7-3mA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,130 +14,161 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2LG-NT-BUU" userLabel="row 0">
-                                <rect key="frame" x="80" y="20" width="440" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2LG-NT-BUU" userLabel="row 0">
+                                <rect key="frame" x="142" y="72" width="90" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-16-K8c">
-                                        <rect key="frame" x="0.0" y="0.0" width="147" height="30"/>
-                                        <state key="normal" title="00"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-16-K8c">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="00">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uI-tn-JIC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo9-kV-pum">
-                                        <rect key="frame" x="147" y="0.0" width="146" height="30"/>
-                                        <state key="normal" title="01"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo9-kV-pum">
+                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="01">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8em-MD-LNf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaV-og-AXY">
-                                        <rect key="frame" x="293" y="0.0" width="147" height="30"/>
-                                        <state key="normal" title="02"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaV-og-AXY">
+                                        <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="02">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELX-bd-Q5l"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="SH4-jZ-9Pa"/>
-                                </constraints>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="72" width="90" height="30"/>
+                                </variation>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="eSf-vd-l12" userLabel="row 1">
-                                <rect key="frame" x="80" y="70" width="440" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="eSf-vd-l12" userLabel="row 1">
+                                <rect key="frame" x="142" y="118" width="90" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rza-WE-qhi">
-                                        <rect key="frame" x="0.0" y="0.0" width="147" height="30"/>
-                                        <state key="normal" title="10"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rza-WE-qhi">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="10">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7DE-QB-6ZF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqj-Gs-3N0">
-                                        <rect key="frame" x="147" y="0.0" width="146" height="30"/>
-                                        <state key="normal" title="11"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqj-Gs-3N0">
+                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="11">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsk-nm-q5z"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-zn-hGa">
-                                        <rect key="frame" x="293" y="0.0" width="147" height="30"/>
-                                        <state key="normal" title="12"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-zn-hGa">
+                                        <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="12">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAI-Kq-yc2"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="XWh-A6-fiF"/>
-                                </constraints>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="121" width="90" height="30"/>
+                                </variation>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ee2-Bj-Kcr" userLabel="row 2">
-                                <rect key="frame" x="80" y="120" width="440" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ee2-Bj-Kcr" userLabel="row 2">
+                                <rect key="frame" x="142" y="166" width="90" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-Mk-48g">
-                                        <rect key="frame" x="0.0" y="0.0" width="147" height="30"/>
-                                        <state key="normal" title="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-Mk-48g">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="20">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sqd-XN-2aP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4T-UC-tg6">
-                                        <rect key="frame" x="147" y="0.0" width="146" height="30"/>
-                                        <state key="normal" title="21"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4T-UC-tg6">
+                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="21">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67F-hm-5a0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-td-NhM">
-                                        <rect key="frame" x="293" y="0.0" width="147" height="30"/>
-                                        <state key="normal" title="22"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-td-NhM">
+                                        <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="22">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofV-9l-g3I"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="gEu-1F-hmZ"/>
-                                </constraints>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="164" width="90" height="30"/>
+                                </variation>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKV-Fc-zdw">
-                                <rect key="frame" x="20" y="158" width="560" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="IiZ-G7-fzm"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKV-Fc-zdw">
+                                <rect key="frame" x="70" y="213" width="234" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo8-mY-uHI">
-                                <rect key="frame" x="279" y="290" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="231" width="360" height="29"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="2LG-NT-BUU" secondAttribute="trailing" constant="60" id="1D1-pq-SZq"/>
-                            <constraint firstItem="2LG-NT-BUU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="7Nj-YG-0zH"/>
-                            <constraint firstItem="nKV-Fc-zdw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7wZ-cq-iGL"/>
-                            <constraint firstItem="nKV-Fc-zdw" firstAttribute="top" secondItem="ee2-Bj-Kcr" secondAttribute="bottom" constant="8" id="Ff8-yJ-KfY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eSf-vd-l12" secondAttribute="trailing" constant="60" id="JeY-yY-9Xc"/>
-                            <constraint firstItem="ee2-Bj-Kcr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="Q2S-My-k9h"/>
-                            <constraint firstItem="nKV-Fc-zdw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Soc-FZ-fBM"/>
-                            <constraint firstItem="eSf-vd-l12" firstAttribute="top" secondItem="2LG-NT-BUU" secondAttribute="bottom" constant="20" id="aWM-sH-3QS"/>
-                            <constraint firstItem="Yo8-mY-uHI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjd-hc-chT"/>
-                            <constraint firstItem="Yo8-mY-uHI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cxP-vN-1vr"/>
-                            <constraint firstItem="2LG-NT-BUU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="l5i-5c-PI4"/>
-                            <constraint firstItem="ee2-Bj-Kcr" firstAttribute="top" secondItem="eSf-vd-l12" secondAttribute="bottom" constant="20" id="lAH-tt-ivp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ee2-Bj-Kcr" secondAttribute="trailing" constant="60" id="yZi-8T-yRG"/>
-                            <constraint firstItem="eSf-vd-l12" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="zSl-se-Ojj"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Lfd-ww-U0O">
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="y7g-Dy-QUF">
+                            <connections>
+                                <segue destination="LeE-iH-5La" kind="show" id="oXI-x1-Utn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="button00" destination="6wK-16-K8c" id="RDc-ma-Xr3"/>
                         <outlet property="button01" destination="oo9-kV-pum" id="Q71-Id-oSV"/>
@@ -150,10 +180,62 @@
                         <outlet property="button21" destination="C4T-UC-tg6" id="WBj-RQ-dVI"/>
                         <outlet property="button22" destination="iTY-td-NhM" id="gAZ-tO-zFV"/>
                         <outlet property="whichPlayerLabel" destination="nKV-Fc-zdw" id="mBe-YI-F4g"/>
-                        <outlet property="winnerLabel" destination="Yo8-mY-uHI" id="1qd-Cz-hs0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432.5" y="183.5"/>
+        </scene>
+        <!--Web Help View Controller-->
+        <scene sceneID="OVL-NF-9Wr">
+            <objects>
+                <viewController id="LeE-iH-5La" customClass="WebHelpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CUQ-J6-Ry5"/>
+                        <viewControllerLayoutGuide type="bottom" id="eAK-To-u4n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5w5-7G-eX9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TBN-Kg-lmh">
+                                <rect key="frame" x="169" y="348" width="37" height="37"/>
+                                <color key="color" red="1" green="0.084139597169999997" blue="0.1599212293" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BdQ-QT-fAu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LeE-iH-5La" id="szq-rv-LiO"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="TBN-Kg-lmh" id="fdY-1s-EvD"/>
+                        <outlet property="webView" destination="BdQ-QT-fAu" id="vqa-IR-Geg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4d4-5u-t0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2088.5" y="183.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4kp-3N-1Lu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CfF-b7-3mA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hAy-tQ-B6D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kgv-hb-zhZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKD-l3-hY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="621" y="184"/>
         </scene>
